@@ -22,12 +22,11 @@
 }
 
 .info-main h1 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .info-main p {
     color: white;
-    font-weight: bold;
     margin: 20 auto;
     line-height: 25px;
     font-size: 1rem;

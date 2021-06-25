@@ -1,0 +1,155 @@
+* {
+margin: 0;
+padding: 0;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    
+}
+
+.navbar {
+    
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li {
+    display: none;
+}
+.main-logo {
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:42.5rem) {
+    /* .navbar {
+        width: 90%;
+        margin: auto;
+    } */
+    .navbar ul li {
+        display: inline-block;
+        padding-left: 10px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase; 
+    }
+    /* .navbar ul li:hover {
+        border-bottom: 3px solid #3ff00965;
+    } */
+    .toggle-button {
+        display: none;
+    }
+} 
+
+@media (min-width:55rem) {
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase; 
+    }
+    /* .navbar ul li:hover {
+        border-bottom: 3px solid #3ff00965;
+    } */
+    .CTA-offer  {
+        color: white !important;
+        background: blue;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+    
+    .CTA-offer:hover {
+        background: white !important;
+        color: black !important;
+    }
+}
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: #fff;
+    display: block;
+    margin: 0.6rem 0;
+}
+@media (min-width: 55rem) {
+    .toggle-button {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 30%;
+    background: #110d0d;
+    width: 80%;
+    height: 100vh;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 20%;
+  }
+  .mobile-nav ul li {
+    list-style: none;
+    margin: 10px auto;
+    position: relative;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+} 
+/* Start CTA design for mobile responsiveness */
+.CTA-offer {
+    color: white;
+    background: blue;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.CTA-offer:hover {
+    border-bottom: none;
+}
+
+/* End CTA mobile responsiveness */

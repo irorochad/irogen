@@ -9,6 +9,7 @@
         height: 110vh;
         background-image: linear-gradient(rgba(2, 1, 1, 0.938), 
         hsla(0, 0%, 4%, 0.377)), url(images/background-home1.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 }

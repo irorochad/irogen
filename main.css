@@ -1,6 +1,7 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .banner {
         position: relative;
@@ -12,13 +13,13 @@
         background-position: center;
 }
 .info-main {
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-40%);
+    font-family: proxima-nova, Arial, "Lucida Grande", sans-serif;
 }
 
 .info-main h1 {
@@ -27,27 +28,22 @@
 }
 .info-main p {
     color: white;
-    margin: 20 auto;
+    margin: 20px 7px;
     line-height: 25px;
     font-size: 1rem;
-    
 }
-
-
 .action__button {
-    width: 200px;
-    padding: 15px 0;
+    border: 1px solid #009688;
+    background: transparent;
     margin:20px 10px;
-    text-align: center;
-    border-radius: 25px;
+    padding: 15px 20px;
+    border-radius: 8px;
     font-weight: bold;
-    /* border: 2px solid #f5f8f8; */
     background: #582fd7;
     color: white;
     cursor: pointer;
-    position: relative;
+    font: inherit;
 }
-
 .content-service-intro {
     width: 100%;
     /* height: 100vh; */
@@ -89,6 +85,7 @@
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
     /* border-radius: 1px solid green; */
     margin-bottom: 40px;
+    vertical-align: middle;
 
 }
 .service-article img{
@@ -117,7 +114,15 @@
     color: white;
     cursor: pointer;
     margin: 0 72px;
+    font: inherit;
+    font-weight: bold;
 
+}
+
+.service-more_button:hover,
+.service-more_button:active {
+    background: white;
+    color: black;
 }
 
 .about-section{
@@ -156,7 +161,12 @@
     color: white;
     cursor: pointer;
     margin: 0 40px;
-
+    font: inherit;
+}
+.about-more_button:hover,
+.about-more_button:active {
+    background: white;
+    color: black;
 }
 .about-image-container{
     margin: auto;
@@ -230,13 +240,18 @@ textarea {
     cursor: pointer;
 }
 
+.contact-button:hover,
+.contact-button:active {
+    background: white;
+    color: black;
+}
+
 .footer-section {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     /* padding: 20px; */
     background: #7335B7;
     color: #fff;
-    font-family: proxima-nova, Arial, "Lucida Grande", sans-serif;
 }
 
 .footer-info_service {
@@ -244,10 +259,10 @@ textarea {
     font-weight: bold;
     text-transform: uppercase; 
     padding: 40px 0 20px 0;
+    font-family: proxima-nova, Arial, "Lucida Grande", sans-serif;
 }
 
 .footer-info_service h1 {
-    
     font-size: 38px;
     line-height: 45px;
     
@@ -289,6 +304,8 @@ hr {
         position: absolute;
         top: 50%;
         transform: translateY(-40%);
+        font-family: proxima-nova, Arial, "Lucida Grande", sans-serif;
+        text-transform: uppercase;
     }
     .info-main h1 {
         font-size: 30px;
@@ -299,7 +316,37 @@ hr {
         font-weight: bold;
         margin: 20 auto;
         line-height: 25px;
+        font-family: proxima-nova, Arial, "Lucida Grande", sans-serif;
         
+    }
+    .action__button {
+        width: 200px;
+        padding: 15px 0;
+        margin:20px 10px;
+        text-align: center;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 1px solid #009688;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .spanA {
+        background: blue;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .action__button:hover .spanA {
+        width: 100%;
     }
     .service-intro {
         margin-top: 10%;
@@ -463,7 +510,7 @@ hr {
     .footer-section {
         height: 60vh;
         border-top-left-radius: 300px;
-        /* font-family: Poppins, sans-serif; */
+        font-family: Poppins, sans-serif;
     }
     
     .footer-info_service {
